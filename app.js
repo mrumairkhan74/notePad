@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const session = require('express-session');
@@ -43,7 +42,7 @@ app.get('/edit/:id', async (req, res) => {
     res.render('edit',{notes});
 });
 
-const port = process.env.PORT
-app.listen(port,()=>{
+
+app.listen(3000,()=>{
     console.log('Server Listening')
 })
